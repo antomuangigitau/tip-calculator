@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <header class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </header>
+      <section class="main-section">
+        <div class="container">
+          <div class="left-container">
+            <!-- top left part  -->
+            <div class="top-left-section">
+              <div class="top-left fill-box">
+                <p>bill</p>
+                <small>Can't be zero</small>
+              </div>
+              <div class="bill-form form">
+                <img src="./images/icon-dollar.svg" alt="Dollar" />
+                <input type="number" name="" class="input-number" id="input__number" placeholder="0" />
+              </div>
+            </div>
+
+            <!-- middle left part  -->
+            <div class="middle-left-section">
+              <p class="select">Select Tip %</p>
+              <div class="grid-boxes">
+                <button data-set="five" type="button" class="box">5%</button>
+                <button data-set="ten" type="button" class="box">10%</button>
+                <button data-set="fifteen" type="button" class="box">15%</button>
+                <button data-set="twentyfive" type="button" class="box">25%</button>
+                <button data-set="fifty" type="button" class="box">50%</button>
+                <input type="number" name="" id="input__box" class="input-box" placeholder="custom" />
+                <!-- <button data-set="custom" class="box" type="button"></button> -->
+              </div>
+            </div>
+            <!-- bottom left part  -->
+            <div class="bottom-left-section">
+              <div class="bottom-left fill-box">
+                <p>no of people</p>
+                <small>Can't be zero</small>
+              </div>
+              <div class="people-form form">
+                <img src="./images/icon-person.svg" alt="Person" />
+                <input type="number" name="" class="input-number" id="people__input" placeholder="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="right-container">
+            <div class="tip-amount flex-container">
+              <p>Tip Amount<span> / person</span></p>
+              <div id="tip-amount-currency" class="currency">$0.00</div>
+            </div>
+            <div class="total-amount flex-container">
+              <p>Total<span> / person</span></p>
+              <div id="tip-total-currency" class="currency">$0.00</div>
+            </div>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+      by <a href="https://github.com/antomuangigitau">Antony Mwangi</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
